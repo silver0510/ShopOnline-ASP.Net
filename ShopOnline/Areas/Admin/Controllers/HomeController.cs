@@ -3,18 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using ShopOnline.Models;
 
-namespace ShopOnline.Controllers
+namespace ShopOnline.Areas.Admin.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        // GET: Admin/Home
         public ActionResult Index()
         {
-            MessageModel message = new MessageModel();
-            message.Wellcome = "Wellcome to Myshop";
-            return View(message);
+            return View();
         }
     }
 }
